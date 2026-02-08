@@ -1,0 +1,162 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
+<svelte:head>
+    <title>Clinical Evidence | The Science of Hearing Care</title>
+    <meta
+        name="description"
+        content="Evidence-based hearing care. Review the clinical data linking hearing loss to cognitive decline and the proven benefits of treatment."
+    />
+</svelte:head>
+
+<section class="pt-32 pb-16 bg-slate-50 text-center px-6">
+    <div class="max-w-4xl mx-auto">
+        <span
+            class="text-xs font-bold tracking-widest text-slate-600 uppercase mb-4 block"
+        >
+            Evidence Based
+        </span>
+        <h1 class="font-serif text-4xl md:text-5xl text-slate-900 mb-6">
+            The Science is Clear
+        </h1>
+        <p
+            class="text-xl text-slate-600 leading-relaxed font-roboto max-w-2xl mx-auto"
+        >
+            We don't guess. We follow clinical data. Recent studies confirm that
+            treating hearing loss is one of the most effective ways to protect
+            your long-term brain health.
+        </p>
+    </div>
+</section>
+
+<!-- The Dementia Link (Source: Lancet/NIH) -->
+<section class="py-20 bg-white px-6">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-12 items-center mb-20">
+            <div class="md:w-1/2">
+                <div
+                    class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold mb-4"
+                >
+                    The Lancet Commission (2020)
+                </div>
+                <h2 class="font-serif text-3xl text-slate-900 mb-6">
+                    Hearing Loss & Cognitive Decline
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    A landmark study identified untreated hearing loss as the <strong
+                        >#1 modifiable risk factor</strong
+                    > for dementia in mid-life.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    When the brain struggles to hear, it reallocates resources
+                    from memory and thinking centers. This "cognitive load"
+                    accelerates decline.
+                </p>
+            </div>
+            <div
+                class="md:w-1/2 bg-slate-50 p-8 rounded-3xl border border-slate-100"
+            >
+                <h3 class="font-bold text-slate-800 mb-4">Risk Reduction</h3>
+                <div class="space-y-4">
+                    <div>
+                        <div
+                            class="flex justify-between text-sm font-bold text-slate-600 mb-1"
+                        >
+                            <span>With Treatment</span>
+                            <span>Normal Risk</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div
+                                class="bg-blue-500 h-2 rounded-full"
+                                style="width: 10%"
+                            ></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-between text-sm font-bold text-slate-600 mb-1"
+                        >
+                            <span>Untreated (Mild)</span>
+                            <span>2x Risk</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div
+                                class="bg-orange-500 h-2 rounded-full"
+                                style="width: 40%"
+                            ></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-between text-sm font-bold text-slate-600 mb-1"
+                        >
+                            <span>Untreated (Severe)</span>
+                            <span>5x Risk</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div
+                                class="bg-red-500 h-2 rounded-full"
+                                style="width: 90%"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-6">
+                    *Data visualized from Johns Hopkins & Lancet studies.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Benefits (Source: NIH) -->
+<section class="py-20 bg-slate-900 text-slate-300 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+        <div
+            class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors"
+        >
+            <div class="text-4xl mb-4">🧠</div>
+            <h3 class="text-white font-bold text-xl mb-2">Cognitive Reserve</h3>
+            <p class="text-sm">
+                Proper hearing stimulation keeps the auditory cortex active and
+                prevents tissue loss.
+            </p>
+        </div>
+        <div
+            class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors"
+        >
+            <div class="text-4xl mb-4">😊</div>
+            <h3 class="text-white font-bold text-xl mb-2">Mental Health</h3>
+            <p class="text-sm">
+                Treatment significantly reduces rates of depression, anxiety,
+                and social isolation.
+            </p>
+        </div>
+        <div
+            class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors"
+        >
+            <div class="text-4xl mb-4">⚖️</div>
+            <h3 class="text-white font-bold text-xl mb-2">Physical Balance</h3>
+            <p class="text-sm">
+                Hearing cues are vital for spatial awareness; simple treatment
+                reduces fall risk.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Logic -->
+<section class="py-24 bg-white text-center px-6">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="font-serif text-3xl text-slate-900 mb-6">
+            Make an Informed Decision
+        </h2>
+        <p class="text-slate-600 mb-10 text-lg">
+            You don't have to take our word for it. We provide raw data and
+            transparent diagnostics so you can see exactly what is happening
+            with your health.
+        </p>
+        <a href="{base}/book" class="btn-primary">Get Tested</a>
+    </div>
+</section>

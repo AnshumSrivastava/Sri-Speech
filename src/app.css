@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Manrope', sans-serif;
+  /* Removed Playfair Display to strictly follow Humanist Sans requirement */
+
+  /* Strict Medical/Premium Palette */
+  --color-primary: #0F4C5C;
+  /* Deep Medical Teal - Trust, Clarity, Professionalism */
+  --color-primary-light: #2C6E7A;
+  /* Softer Teal for interactive states */
+  --color-secondary: #F4E4C1;
+  /* Warm Sand - Empathy, Human Touch */
+
+  --color-surface: #FFFFFF;
+  --color-background: #FAFAF9;
+  /* Warm Off-White / Stone-50 equivalent */
+
+  --color-text-main: #404040;
+  /* Soft Grey - High readability without harsh black */
+  --color-text-heading: #1A1A1A;
+  /* Deep Grey - Authority */
+  --color-border: #E5E5E5;
+}
+
+@layer utilities {
+
+  /* Typography - Medical/Scientific Precision */
+  .text-display-huge {
+    @apply font-sans text-5xl md:text-6xl font-semibold tracking-tight leading-tight text-[var(--color-text-heading)];
+  }
+
+  .text-display-large {
+    @apply font-sans text-4xl md:text-5xl font-semibold tracking-tight leading-tight text-[var(--color-text-heading)];
+  }
+
+  .text-display-medium {
+    @apply font-sans text-3xl md:text-4xl font-medium tracking-tight leading-snug text-[var(--color-text-heading)];
+  }
+
+  .text-body-large {
+    @apply font-sans text-lg md:text-xl leading-relaxed text-[var(--color-text-main)];
+  }
+
+  .text-body-base {
+    @apply font-sans text-base leading-relaxed text-[var(--color-text-main)];
+  }
+
+  /* Strict Layout Constraints */
+  .content-container {
+    @apply max-w-[1200px] mx-auto px-6 md:px-12;
+  }
+
+  .text-block {
+    @apply max-w-[720px];
+  }
+
+  /* Premium Components - Minimalist, no shadows/gradients unless necessary */
+  .btn-primary {
+    @apply px-8 py-4 rounded-lg bg-[var(--color-primary)] text-white text-base font-semibold hover:bg-[var(--color-primary-light)] transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 rounded-lg bg-transparent text-[var(--color-primary)] text-base font-semibold border border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-colors duration-300;
+  }
+
+  .card-medical {
+    @apply bg-white p-8 rounded-2xl border border-[var(--color-border)];
+    /* No shadow by default for cleaner, clinical feel */
+  }
+}
+
+body {
+  @apply bg-[var(--color-background)] text-[var(--color-text-main)] antialiased font-sans selection:bg-[var(--color-secondary)] selection:text-[var(--color-primary)] overflow-x-hidden;
+}
+
+/* Animation System: "Breathing" Motion */
+@layer utilities {
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-4 transition-all duration-700 ease-out;
+  }
+
+  .animate-on-scroll.is-visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Micro-motion: Gentle Float */
+  @keyframes float-gentle {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .animate-float {
+    animation: float-gentle 6s ease-in-out infinite;
+  }
+
+  /* Delays for Staggered Entrance */
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .delay-200 {
+    transition-delay: 200ms;
+  }
+
+  .delay-300 {
+    transition-delay: 300ms;
+  }
+
+  .delay-400 {
+    transition-delay: 400ms;
+  }
+
+  /* Backdrop Utilities for Visual-First Design */
+  .backdrop-brightness-125 {
+    backdrop-filter: brightness(1.25);
+  }
+
+  .backdrop-contrast-110 {
+    backdrop-filter: contrast(1.1);
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    @apply opacity-100 translate-y-0 transition-none;
+  }
+
+  .animate-float {
+    animation: none;
+  }
+}
