@@ -1,14 +1,12 @@
 <script>
-  import { base } from "$app/paths";
+    import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Speech Therapy Ludhiana | Voice, Fluency, & Rehabilitation</title>
-    <meta
-        name="description"
-        content="Expert speech therapy for children and adults. Treating stammering, delayed speech, and voice disorders with evidence-based techniques."
-    />
-</svelte:head>
+<SEO
+    title="Speech Therapy Ludhiana | Voice, Fluency, & Rehabilitation"
+    description="Expert speech therapy for children and adults. Treating stammering, delayed speech, and voice disorders with evidence-based techniques."
+/>
 
 <section class="pt-32 pb-16 bg-slate-50 text-center px-6">
     <div class="max-w-4xl mx-auto">

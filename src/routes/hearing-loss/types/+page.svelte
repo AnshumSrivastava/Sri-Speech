@@ -1,14 +1,12 @@
 <script>
-  import { base } from "$app/paths";
+    import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Types of Hearing Loss | Conductive vs Sensorineural</title>
-    <meta
-        name="description"
-        content="Understand the medical causes of hearing loss. Differentiating between Conductive, Sensorineural, and Mixed hearing loss."
-    />
-</svelte:head>
+<SEO
+    title="Types of Hearing Loss | Conductive vs Sensorineural"
+    description="Understand the medical causes of hearing loss. Differentiating between Conductive, Sensorineural, and Mixed hearing loss."
+/>
 
 <section class="pt-32 pb-16 bg-slate-50 text-center px-6">
     <div class="max-w-4xl mx-auto">

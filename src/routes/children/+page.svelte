@@ -1,14 +1,13 @@
 <script>
-  import { base } from "$app/paths";
+    import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Pediatric Hearing Care | Early Intervention & Support</title>
-    <meta
-        name="description"
-        content="Your child's hearing is critical for brain development. Learn about newborn screening, mileslates, and pediatric hearing solutions."
-    />
-</svelte:head>
+<SEO
+    title="Pediatric Hearing Care | Early Intervention & Support"
+    description="Your child's hearing is critical for brain development. Learn about newborn screening, milestones, and pediatric hearing solutions."
+    keywords="pediatric audiologist, child hearing test, newborn hearing screening, speech delay, hearing milestones"
+/>
 
 <section class="pt-32 pb-16 bg-slate-50 text-center px-6">
     <div class="max-w-4xl mx-auto">

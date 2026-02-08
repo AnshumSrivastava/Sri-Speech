@@ -3,6 +3,7 @@
     import { page } from "$app/stores";
     import { articles } from "$lib/data/articles";
     import { error } from "@sveltejs/kit";
+    import SEO from "$lib/components/SEO.svelte";
 
     const slug = $page.params.slug;
     const article = articles.find((a) => a.slug === slug);
@@ -19,10 +20,12 @@
         .slice(0, 3);
 </script>
 
-<svelte:head>
-    <title>{article.title} | Sri Speech & Hearing Aid Centre</title>
-    <meta name="description" content={article.summary} />
-</svelte:head>
+<SEO
+    title={article.title}
+    description={article.summary}
+    type="article"
+    date={article.date}
+/>
 
 <div
     class="bg-white min-h-screen pb-24 font-serif text-slate-900 selection:bg-teal-100 selection:text-teal-900"

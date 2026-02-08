@@ -1,14 +1,12 @@
 <script>
-  import { base } from "$app/paths";
+    import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Finding Your Fit | Hearing Aid Styles</title>
-    <meta
-        name="description"
-        content="Explore the different types of hearing aids. From invisible options to powerful BTE models, find the style that matches your lifestyle."
-    />
-</svelte:head>
+<SEO
+    title="Finding Your Fit | Hearing Aid Styles"
+    description="Explore the different types of hearing aids. From invisible options to powerful BTE models, find the style that matches your lifestyle."
+/>
 
 <section class="pt-32 pb-16 bg-slate-50 border-b border-slate-200">
     <div class="content-container text-center">

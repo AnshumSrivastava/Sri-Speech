@@ -1,5 +1,6 @@
 <script>
     import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
     import { onMount } from "svelte";
 
     let openIndex = null;
@@ -55,13 +56,10 @@
     }
 </script>
 
-<svelte:head>
-    <title>Frequently Asked Questions | Sri Speech & Hearing Aid Centre</title>
-    <meta
-        name="description"
-        content="Answers to common questions about hearing loss, hearing aids, and speech therapy. Trusted medical information from Sri Speech & Hearing Aid Centre."
-    />
-</svelte:head>
+<SEO
+    title="Frequently Asked Questions"
+    description="Answers to common questions about hearing loss, hearing aids, and speech therapy. Trusted medical information from Sri Speech & Hearing Aid Centre."
+/>
 
 <div class="bg-slate-50 min-h-screen pb-24">
     <!-- Header -->

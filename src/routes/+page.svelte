@@ -2,19 +2,16 @@
   import { base } from "$app/paths";
   import { onMount } from "svelte";
   import { intersection } from "$lib/actions/intersection";
+  import SEO from "$lib/components/SEO.svelte";
 
   // Removed fade/fly in favor of CSS-based Intersection Observer for performance
 </script>
 
-<svelte:head>
-  <title
-    >Sri Speech & Hearing Aid Centre | Professional Audiology Excellence</title
-  >
-  <meta
-    name="description"
-    content="Professional-grade hearing care in Ludhiana. Trusted audiologists dedicated to your long-term hearing health and connection."
-  />
-</svelte:head>
+<SEO
+  title="Professional Audiology Excellence"
+  description="Professional-grade hearing care in Ludhiana. Trusted audiologists dedicated to your long-term hearing health and connection."
+  keywords="audiologist ludhiana, hearing test, hearing aids, speech therapy, digital hearing aids, cochlear implants"
+/>
 
 <!-- SECTION 1: HERO (Trust + Professional Illustration) -->
 <section

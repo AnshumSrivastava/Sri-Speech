@@ -1,6 +1,12 @@
 <script>
     import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
+
+<SEO
+    title="Pediatric Speech Therapy"
+    description="Early intervention and speech therapy for children. Helping your child communicate with confidence."
+/>
 
 <div class="min-h-screen flex items-center justify-center bg-slate-50">
     <div class="text-center">

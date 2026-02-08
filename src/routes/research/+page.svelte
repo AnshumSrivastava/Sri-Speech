@@ -1,14 +1,12 @@
 <script>
-  import { base } from "$app/paths";
+    import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Clinical Evidence | The Science of Hearing Care</title>
-    <meta
-        name="description"
-        content="Evidence-based hearing care. Review the clinical data linking hearing loss to cognitive decline and the proven benefits of treatment."
-    />
-</svelte:head>
+<SEO
+    title="Clinical Evidence | The Science of Hearing Care"
+    description="Evidence-based hearing care. Review the clinical data linking hearing loss to cognitive decline and the proven benefits of treatment."
+/>
 
 <section class="pt-32 pb-16 bg-slate-50 text-center px-6">
     <div class="max-w-4xl mx-auto">

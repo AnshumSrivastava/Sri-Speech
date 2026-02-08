@@ -1,6 +1,12 @@
 <script>
     import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
+
+<SEO
+    title="Online Hearing Check"
+    description="Quick online hearing check to assess your hearing health."
+/>
 
 <div class="min-h-screen flex items-center justify-center bg-slate-50">
     <div class="text-center">

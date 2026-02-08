@@ -1,5 +1,6 @@
 <script>
     let activeTab = "styles"; // 'styles' | 'how-it-works' | 'faq'
+    import SEO from "$lib/components/SEO.svelte";
 
     const styles = [
         {
@@ -41,13 +42,10 @@
     ];
 </script>
 
-<svelte:head>
-    <title>Hearing Aid Styles & Technology | Sri Speech Ludhiana</title>
-    <meta
-        name="description"
-        content="Explore different types of hearing aids: BTE, RIC, ITE, and Invisible models. Learn how they work and find the best fit for your lifestyle."
-    />
-</svelte:head>
+<SEO
+    title="Hearing Aid Styles & Technology"
+    description="Explore different types of hearing aids: BTE, RIC, ITE, and Invisible models. Learn how they work and find the best fit for your lifestyle."
+/>
 
 <div class="bg-slate-50 min-h-screen pt-32 pb-24">
     <div class="max-w-4xl mx-auto px-6 mb-16 text-center">

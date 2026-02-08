@@ -65,6 +65,38 @@
             {/if}
         </a>
 
+        <!-- Google Maps Option -->
+        <a
+            href="https://www.google.com/maps/dir//Sri+Speech+Hearing+AID+Centre+-+Hearing+Aid+Near+me+-+Rechargeable+hearing+aid+-+CIC+digital+hearing+aid.,+SRI+SPEECH+HEARING+AID+CENTRE+WR2R%2B58G+PNB+ATM+Kochar+Market+Road,+ESI+Hospital+Rd,+adj.+PUNJAB+NATIONAL+BANK,+Near+ESI+Hospital,+Model+Gram,+Ludhiana,+Punjab+141001/@30.9449799,75.8185984,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x391a83d4f541dc67:0x97a616df873274d5!2m2!1d75.8408125!2d30.9004375?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            transition:scale={{ duration: 200, delay: 50 }}
+            class="w-12 h-12 rounded-full bg-white text-stone-700 shadow-lg flex items-center justify-center hover:bg-stone-50 transition-colors"
+            aria-label="Get Directions"
+        >
+            <!-- Location Icon -->
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+            </svg>
+        </a>
+
         <!-- WhatsApp Option -->
         <a
             href="https://wa.me/919417780505"

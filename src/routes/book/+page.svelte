@@ -1,15 +1,13 @@
 <script>
     import { base } from "$app/paths";
     import { fade } from "$lib/actions/fade";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Schedule Care | Sri Speech & Hearing Aid Centre</title>
-    <meta
-        name="description"
-        content="Schedule your professional hearing assessment. A comfortable, patient-first environment for your hearing health."
-    />
-</svelte:head>
+<SEO
+    title="Schedule Care"
+    description="Schedule your professional hearing assessment. A comfortable, patient-first environment for your hearing health."
+/>
 
 <div class="bg-slate-50 min-h-screen">
     <div class="grid lg:grid-cols-2 min-h-screen">

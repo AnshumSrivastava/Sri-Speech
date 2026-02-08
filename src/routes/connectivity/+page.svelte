@@ -1,6 +1,12 @@
 <script>
     import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
+
+<SEO
+    title="Bluetooth Hearing Aids & Integration"
+    description="Explore modern hearing aid connectivity. Stream calls, music, and TV directly to your hearing devices."
+/>
 
 <div class="min-h-screen flex items-center justify-center bg-slate-50">
     <div class="text-center">

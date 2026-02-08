@@ -1,6 +1,12 @@
 <script>
     import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
+
+<SEO
+    title="Advanced Hearing Technology"
+    description="Explore the latest in hearing aid technology. From AI noise reduction to bluetooth streaming, discover how modern devices enhance your life."
+/>
 
 <div class="min-h-screen flex items-center justify-center bg-slate-50">
     <div class="text-center">

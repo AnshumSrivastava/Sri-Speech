@@ -1,14 +1,12 @@
 <script>
-  import { base } from "$app/paths";
+    import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-    <title>Signs of Hearing Loss | Hidden Symptoms & Daily Impact</title>
-    <meta
-        name="description"
-        content="Hearing loss is often gradual. Learn the signs, from emotional fatigue to missing conversational cues. Medical insights from NIDCD & Harvard Health."
-    />
-</svelte:head>
+<SEO
+    title="Signs of Hearing Loss | Hidden Symptoms & Daily Impact"
+    description="Hearing loss is often gradual. Learn the signs, from emotional fatigue to missing conversational cues. Medical insights from NIDCD & Harvard Health."
+/>
 
 <section class="pt-32 pb-16 bg-slate-50 text-center px-6">
     <div class="max-w-4xl mx-auto">

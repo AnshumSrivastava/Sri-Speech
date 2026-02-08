@@ -1,6 +1,12 @@
 <script>
     import { base } from "$app/paths";
+    import SEO from "$lib/components/SEO.svelte";
 </script>
+
+<SEO
+    title="Privacy Policy"
+    description="Privacy Policy for Sri Speech & Hearing Aid Centre. How we collect, use, and protect your personal information."
+/>
 
 <div class="min-h-screen flex items-center justify-center bg-slate-50">
     <div class="text-center">

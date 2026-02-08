@@ -3,6 +3,7 @@
     import { articles } from "$lib/data/articles";
     import { fade } from "$lib/actions/fade";
     import { fly } from "svelte/transition";
+    import SEO from "$lib/components/SEO.svelte";
 
     let searchQuery = "";
     let selectedCategory = "All";
@@ -27,13 +28,10 @@
         filteredArticles.length > 1 ? filteredArticles.slice(1) : [];
 </script>
 
-<svelte:head>
-    <title>Articles & Resources | Sri Speech & Hearing</title>
-    <meta
-        name="description"
-        content="Expert articles on hearing health, speech therapy, and medical technology. Your trusted resource for audiology insights."
-    />
-</svelte:head>
+<SEO
+    title="Articles & Resources | Sri Speech & Hearing"
+    description="Expert articles on hearing health, speech therapy, and medical technology. Your trusted resource for audiology insights."
+/>
 
 <div class="bg-white min-h-screen">
     <!-- Navbar Spacer -->
