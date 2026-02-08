@@ -11,11 +11,11 @@
       <!-- Logo -->
       <a href="{base}/" class="flex items-center gap-3 group">
         <!-- Logo Icon -->
-        <div
-          class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center text-white font-serif font-bold text-xl shadow-md transition-colors duration-300"
-        >
-          S
-        </div>
+        <img
+          src="{base}/images/srilogo.svg"
+          alt="Sri Speech & Hearing Logo"
+          class="w-10 h-10 object-contain"
+        />
         <div class="flex flex-col">
           <span
             class="font-serif font-bold text-slate-800 text-lg leading-none tracking-tight group-hover:text-blue-800 transition-colors"

@@ -10,11 +10,11 @@
             <!-- Brand -->
             <div class="col-span-1 md:col-span-2 space-y-8">
                 <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center text-white font-serif font-bold text-xl shadow-lg shadow-blue-900/50"
-                    >
-                        S
-                    </div>
+                    <img
+                        src="{base}/images/srilogo.svg"
+                        alt="Sri Speech & Hearing Logo"
+                        class="w-10 h-10 object-contain brightness-0 invert"
+                    />
                     <span
                         class="font-serif font-bold text-white text-2xl tracking-tight"
                         >Sri Speech & Hearing</span
